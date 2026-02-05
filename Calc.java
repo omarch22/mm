@@ -33,6 +33,9 @@ public class Calc {
         else if(oper.equals("division")){
             resultado=n1/n2;
         }
+        else if(oper.equals("resta")){
+            resultado=n1-n2;
+        }
 
        
 
@@ -40,19 +43,4 @@ public class Calc {
     }
     
 
-    @GetMapping("/users/{userId}")
-    public String getUserDetails(
-            @PathVariable Long userId,
-            @RequestParam(value="name",defaultValue="World") String name) {
-
-        return "User ID: "+userId+", "+name;
-    }
-
-    @GetMapping("/hello")
-    public String hello(
-            @RequestParam(value="name",defaultValue="World") String name,
-            @RequestParam(value="carrera",defaultValue="World") String carrera) {
-
-        return "Hello "+name+"!, "+carrera;
-    }
 }
