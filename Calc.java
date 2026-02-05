@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-//Path Variable
+//Los parametros son opcionales
 @RestController
 public class Calc {
 
@@ -16,11 +16,11 @@ public class Calc {
         return "Hola";
     }
 
-    @GetMapping("/calc/{oper}/{n1}/{n2}")
+    @GetMapping("/calc-param")
     public String calc(
-            @PathVariable String oper,
-            @PathVariable float n1,
-            @PathVariable float n2) {
+            @RequestParam String oper,
+            @RequestParam float n1,
+            @RequestParam float n2) {
 
         float resultado=0;
 
