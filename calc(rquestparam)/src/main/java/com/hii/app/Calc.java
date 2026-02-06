@@ -24,8 +24,17 @@ public class Calc {
 
         float resultado=0;
 
-        if(oper.equals("suma")){
+       if(oper.equals("suma")){
             resultado=n1+n2;
+        }
+        else if(oper.equals("multiplicacion")){
+            resultado=n1*n2;
+        }
+        else if(oper.equals("division")){
+            resultado=n1/n2;
+        }
+        else if(oper.equals("resta")){
+            resultado=n1-n2;
         }
        
 
