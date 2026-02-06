@@ -18,9 +18,9 @@ public class Calc {
 
     @GetMapping("/calc/{oper}/{n1}/{n2}")
     public String calc(
-            @PathVariable String oper,
-            @PathVariable float n1,
-            @PathVariable float n2) {
+            @RequestParam String oper,
+            @RequestParam  float n1,
+            @RequestParam  float n2) {
 
         float resultado=0;
 
