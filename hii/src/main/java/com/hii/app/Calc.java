@@ -30,6 +30,9 @@ public class Calc {
         else if (oper.equals("resta")){
             resultado=n1-n2;
         }
+        else if (oper.equals("multiplicacion")){
+            resultado=n1*n2;
+        }
        
 
        
