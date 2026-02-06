@@ -27,6 +27,10 @@ public class Calc {
             resultado = operacion.getN1()*operacion.getN2();
         } 
 
+        else if (oper.equals("division")) {
+            resultado = operacion.getN1()/operacion.getN2();
+        } 
         return "Resultado: "+resultado;
     }
 }
+
