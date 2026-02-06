@@ -16,7 +16,7 @@ public class Calc {
         return "Hola";
     }
 
-    @GetMapping("/calc/{oper}/{n1}/{n2}")
+    @GetMapping("/calc-param")
     public String calc(
             @RequestParam String oper,
             @RequestParam  float n1,
